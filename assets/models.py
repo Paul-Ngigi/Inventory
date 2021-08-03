@@ -59,4 +59,20 @@ class Computer(models.Model):
     def __str__(self) -> str:
         return self.name
 
+class Laptop(models.Model):
+    name = models.CharField(max_length=30)
+    brand = models.CharField(max_length=20, choices=computer_brand)
+    memory = models.CharField(max_length=15, choices=computer_memory)
+    ram = models.CharField(max_length=15, choices=ram_memory)
+    preprosser = models.CharField(max_length=15, choices=preprosser)
 
+    def __str__(self) -> str:
+        return self.name
+
+class Finance(models.Model):
+    amount = models.IntegerField(default=5000)
+
+    def __str__(self) -> str:
+        return self.amount
+
+        

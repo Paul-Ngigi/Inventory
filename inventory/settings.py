@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # Apps
     'assets',
+    'categories',
 ]
 
 MIDDLEWARE = [
